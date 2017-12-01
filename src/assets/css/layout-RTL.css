@@ -1266,3 +1266,9 @@ div.owl-carousel.owl-mini-testimonial .owl-controls {
 #switcher .content-switcher label {
 	float:right !important;
 }
+.col-md-5th{
+	float: right;
+}
+img.pull-right {
+    margin: 0 0px 10px 20px;
+}

@@ -88,7 +88,7 @@
 .overlay.green-82 {
     background-color: rgba(0, 115, 103, 0.82);
 }
-.owl-carousel{
+#home-carousel .owl-carousel{
     background-color: #007367;
     border: 4px solid #007367;
 }

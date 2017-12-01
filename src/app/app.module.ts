@@ -13,7 +13,8 @@ const rout : Routes=[
 {path:'cart',component:CartComponent },
 {path:'home',component:HomeComponent},
 {path:'checkout',component:CheckoutComponent},
-{path:'AllResturants',component:AllResturantsComponent}
+{path:'AllResturants',component:AllResturantsComponent},
+{path:'single-resturant',component:SingleResturantComponent}
 ];
 
 @NgModule({

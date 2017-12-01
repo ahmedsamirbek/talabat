@@ -13189,3 +13189,6 @@ section.dark .md-editor.md-fullscreen-mode {
 	color:#fff;
 	background-color:#333 !important;
 }
+.checkbox+.checkbox, .radio+.radio{
+	margin-top:1px;
+}
