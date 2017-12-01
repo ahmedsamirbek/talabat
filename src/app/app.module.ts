@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import {CartComponent} from  '../app/Component/Cart/cart.component';
 import {CheckoutComponent} from  '../app/Component/checkout/checkout.component';
 import {HomeComponent} from  '../app/Component/home/home.component';
+import { AllResturantsComponent } from './Component/all-resturants/all-resturants.component';
 
 const rout : Routes=[
 {path:'cart',component:CartComponent },
 {path:'home',component:HomeComponent},
-{path:'checkout',component:CheckoutComponent}
+{path:'checkout',component:CheckoutComponent},
+{path:'AllResturants',component:AllResturantsComponent}
 ];
 
 @NgModule({
@@ -19,6 +21,7 @@ const rout : Routes=[
   CartComponent,
   CheckoutComponent,
   HomeComponent,
+  AllResturantsComponent
   
   ],
   imports: [
