@@ -7,6 +7,7 @@ import {CartComponent} from  '../app/Component/Cart/cart.component';
 import {CheckoutComponent} from  '../app/Component/checkout/checkout.component';
 import {HomeComponent} from  '../app/Component/home/home.component';
 import { AllResturantsComponent } from './Component/all-resturants/all-resturants.component';
+import { SingleResturantComponent } from './Component/single-resturant/single-resturant.component';
 
 const rout : Routes=[
 {path:'cart',component:CartComponent },
@@ -21,7 +22,8 @@ const rout : Routes=[
   CartComponent,
   CheckoutComponent,
   HomeComponent,
-  AllResturantsComponent
+  AllResturantsComponent,
+  SingleResturantComponent
   
   ],
   imports: [
