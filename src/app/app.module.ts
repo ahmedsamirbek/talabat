@@ -8,13 +8,15 @@ import {CheckoutComponent} from  '../app/Component/checkout/checkout.component';
 import {HomeComponent} from  '../app/Component/home/home.component';
 import { AllResturantsComponent } from './Component/all-resturants/all-resturants.component';
 import { SingleResturantComponent } from './Component/single-resturant/single-resturant.component';
+import { SingleWithCartComponent } from './Component/single-with-cart/single-with-cart.component';
 
 const rout : Routes=[
 {path:'cart',component:CartComponent },
 {path:'home',component:HomeComponent},
 {path:'checkout',component:CheckoutComponent},
 {path:'AllResturants',component:AllResturantsComponent},
-{path:'single-resturant',component:SingleResturantComponent}
+{path:'single-resturant',component:SingleResturantComponent},
+{path:'single-with-cart',component:SingleWithCartComponent}
 ];
 
 @NgModule({
@@ -24,7 +26,8 @@ const rout : Routes=[
   CheckoutComponent,
   HomeComponent,
   AllResturantsComponent,
-  SingleResturantComponent
+  SingleResturantComponent,
+  SingleWithCartComponent
   
   ],
   imports: [
