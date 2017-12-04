@@ -34,5 +34,68 @@
   </header>
   <!-- /Top Nav -->
 </div>
-<router-outlet></router-outlet>
+<div class="sticky-side sticky-side-right visible-md visible-lg">
+  <a class="rating-box" data-toggle="modal" data-target=".rating-modal">
+    <span>رأيك يهمنا</span>
+  </a>
 
+</div>
+<div class="modal fade rating-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- header modal -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myLargeModalLabel">رأيك يهمنا </h4>
+      </div>
+
+      <!-- body modal -->
+      <div class="modal-body">
+        <h4>ما رأيك فى موقع
+          <span>طلبات</span>؟</h4>
+        <div class="row">
+          <div class="col-md-1">
+            <span>التقييم</span>
+          </div>
+          <div class="col-md-3">
+            <star-rating-comp [starType]="'svg'" [rating]="2.63"></star-rating-comp>
+          </div>
+        </div>
+        <h5>شاركنا بتعليقك هنا ! </h5>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fancy-form">
+              <textarea rows="5" class="form-control word-count" data-maxlength="200" data-info="textarea-words-info" placeholder="اترك تعليقاً"></textarea>
+
+              <i class="fa fa-comments">
+                <!-- icon -->
+              </i>
+
+              <span class="fancy-hint size-11 text-muted">
+                <strong>ملاحظة :</strong> الحد الاقصى 200 كلمة
+                <span class="pull-left">
+                  <span id="textarea-words-info">0/200</span> كلمة
+                </span>
+              </span>
+
+            </div>
+
+          </div>
+          <div class="col-md-12">
+            <a href="#" class="btn btn-3d btn-reveal btn-success pull-left">
+              <i class="fa fa-check"></i>
+              <span>ارسال</span>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

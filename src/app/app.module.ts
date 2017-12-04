@@ -9,7 +9,7 @@ import {HomeComponent} from  '../app/Component/home/home.component';
 import { AllResturantsComponent } from './Component/all-resturants/all-resturants.component';
 import { SingleResturantComponent } from './Component/single-resturant/single-resturant.component';
 import { SingleWithCartComponent } from './Component/single-with-cart/single-with-cart.component';
-
+import { StarRatingModule } from 'angular-star-rating';
 const rout : Routes=[
 {path:'cart',component:CartComponent },
 {path:'home',component:HomeComponent},
@@ -33,6 +33,7 @@ const rout : Routes=[
   imports: [
     BrowserModule,
     RouterModule.forRoot(rout),
+    StarRatingModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

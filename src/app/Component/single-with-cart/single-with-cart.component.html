@@ -613,29 +613,17 @@
                   </div>
 
                   <!-- Stars -->
-                  <div class="product-star-vote clearfix">
-
-
-                    <input type="radio" name="product-review-vote" value="1" /> نجمة واحدة
-
-
-
-                    <input type="radio" name="product-review-vote" value="2" /> نجمتين
-
-
-
-                    <input type="radio" name="product-review-vote" value="3" /> 3 نجوم
-
-
-
-                    <input type="radio" name="product-review-vote" value="4" /> 4 نجوم
-
-
-
-                    <input type="radio" name="product-review-vote" value="5" /> 5 نجوم
-
-
+                  <div class="row">
+                    <div class="col-md-1">
+                      <span>التقييم</span>
+                    </div>
+                    <div class="col-md-3">
+                        <star-rating-comp [starType]="'svg'" [rating]="2.63"></star-rating-comp>
+                    </div>
                   </div>
+                 
+                
+                  
 
                   <!-- Send Button -->
                   <button type="submit" class="btn btn-primary">
