@@ -98,4 +98,97 @@
     </div>
   </div>
 </div>
+<div class="sticky-side sticky-side-left visible-md visible-lg">
+  <a class="login-tab" data-toggle="modal" data-target=".login-modal">
+
+    <h5 class="nomargin">
+      <span class="fa fa-user"></span> تسجيل الدخول</h5>
+  </a>
+
+</div>
+<div class="modal fade login-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- header modal -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myLargeModalLabel">
+          <i class="fa fa-users"></i> تسجيل الدخول </h4>
+      </div>
+
+      <!-- body modal -->
+      <div class="modal-body">
+
+
+        <div class="row">
+
+          <div class="col-xs-12 col-md-12">
+            <!-- login form -->
+            <form action="" method="post" class="sky-form boxed">
+
+
+              <fieldset class="nomargin">
+
+                <label class="label  text-right margin-top-20">الايميل</label>
+                <label class="input">
+                  <i class="ico-append fa fa-envelope"></i>
+                  <input type="email">
+                  <span class="tooltip tooltip-top-right">الايميل</span>
+                </label>
+
+                <label class="label  text-right margin-top-20">أكتب كلمة المرور</label>
+                <label class="input">
+                  <i class="ico-append fa fa-lock"></i>
+                  <input type="password">
+                  <b class="tooltip tooltip-top-right">أكتب كلمة المرور</b>
+                </label>
+
+
+              </fieldset>
+
+              <footer class="celarfix">
+                <button type="submit" class="btn btn-primary noradius pull-right">
+                  <i class="fa fa-check"></i> سجل الدخول</button>
+                <div class="login-forgot-password pull-left">
+                  <a href="#">نسيت كلمة المرور ؟</a>
+                </div>
+              </footer>
+            </form>
+            <!-- /login form -->
+
+            <div class="margin-bottom-20 text-center">
+              &ndash;
+              <b>أو</b> &ndash;
+            </div>
+
+            <div class="socials margin-top10 text-center">
+              <!-- more buttons: ui-buttons.html -->
+              <a href="#" class="social-icon social-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <i class="icon-facebook"></i>
+                <i class="icon-facebook"></i>
+              </a>
+              <a href="#" class="social-icon social-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <i class="icon-twitter"></i>
+                <i class="icon-twitter"></i>
+              </a>
+              <a href="#" class="social-icon social-google" data-toggle="tooltip" data-placement="top" title="Google">
+                <i class="icon-google-plus"></i>
+                <i class="icon-google-plus"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
 <router-outlet></router-outlet>
