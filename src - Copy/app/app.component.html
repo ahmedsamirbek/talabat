@@ -1,0 +1,194 @@
+<div id="header" class="transparent clearfix">
+  <!-- TOP NAV -->
+  <header id="topNav">
+    <div class="">
+      <!-- Logo -->
+
+      <div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
+        <nav class="nav-main">
+          <ul id="topMain" class="nav nav-pills nav-main">
+            <li>
+              <a id="sidepanel_btn" href="#" class="fa fa-bars"></a>
+
+            </li>
+            <li>
+              <a class="talbat-logo" href="#">
+                <img src="assets/images/logo_dark.png" class="img-responsive " alt="" />
+              </a>
+            </li>
+          </ul>
+
+
+        </nav>
+        <nav class="nav-main">
+          <ul id="lang" class="nav nav-pills nav-main">
+            <li>
+              <a id="lang-btn" class="fa fa-language" href="#"></a>
+
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+  <!-- /Top Nav -->
+</div>
+<div class="sticky-side sticky-side-right visible-md visible-lg">
+  <a class="rating-box" data-toggle="modal" data-target=".rating-modal">
+    <span>رأيك يهمنا</span>
+  </a>
+
+</div>
+<div class="modal fade rating-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- header modal -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myLargeModalLabel">رأيك يهمنا </h4>
+      </div>
+
+      <!-- body modal -->
+      <div class="modal-body">
+        <h4>ما رأيك فى موقع
+          <span>طلبات</span>؟</h4>
+        <div class="row">
+          <div class="col-md-1">
+            <span>التقييم</span>
+          </div>
+          <div class="col-md-3">
+            <star-rating-comp [starType]="'svg'" [rating]="2.63"></star-rating-comp>
+          </div>
+        </div>
+        <h5>شاركنا بتعليقك هنا ! </h5>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fancy-form">
+              <textarea rows="5" class="form-control word-count" data-maxlength="200" data-info="textarea-words-info" placeholder="اترك تعليقاً"></textarea>
+
+              <i class="fa fa-comments">
+                <!-- icon -->
+              </i>
+
+              <span class="fancy-hint size-11 text-muted">
+                <strong>ملاحظة :</strong> الحد الاقصى 200 كلمة
+                <span class="pull-left">
+                  <span id="textarea-words-info">0/200</span> كلمة
+                </span>
+              </span>
+
+            </div>
+
+          </div>
+          <div class="col-md-12">
+            <a href="#" class="btn btn-3d btn-reveal btn-success pull-left">
+              <i class="fa fa-check"></i>
+              <span>ارسال</span>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="sticky-side sticky-side-left visible-md visible-lg">
+  <a class="login-tab" data-toggle="modal" data-target=".login-modal">
+
+    <h5 class="nomargin">
+      <span class="fa fa-user"></span> تسجيل الدخول</h5>
+  </a>
+
+</div>
+<div class="modal fade login-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- header modal -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myLargeModalLabel">
+          <i class="fa fa-users"></i> تسجيل الدخول </h4>
+      </div>
+
+      <!-- body modal -->
+      <div class="modal-body">
+
+
+        <div class="row">
+
+          <div class="col-xs-12 col-md-12">
+            <!-- login form -->
+            <form action="" method="post" class="sky-form boxed">
+
+
+              <fieldset class="nomargin">
+
+                <label class="label  text-right margin-top-20">الايميل</label>
+                <label class="input">
+                  <i class="ico-append fa fa-envelope"></i>
+                  <input type="email">
+                  <span class="tooltip tooltip-top-right">الايميل</span>
+                </label>
+
+                <label class="label  text-right margin-top-20">أكتب كلمة المرور</label>
+                <label class="input">
+                  <i class="ico-append fa fa-lock"></i>
+                  <input type="password">
+                  <b class="tooltip tooltip-top-right">أكتب كلمة المرور</b>
+                </label>
+
+
+              </fieldset>
+
+              <footer class="celarfix">
+                <button type="submit" class="btn btn-primary noradius pull-right">
+                  <i class="fa fa-check"></i> سجل الدخول</button>
+                <div class="login-forgot-password pull-left">
+                  <a href="#">نسيت كلمة المرور ؟</a>
+                </div>
+              </footer>
+            </form>
+            <!-- /login form -->
+
+            <div class="margin-bottom-20 text-center">
+              &ndash;
+              <b>أو</b> &ndash;
+            </div>
+
+            <div class="socials margin-top10 text-center">
+              <!-- more buttons: ui-buttons.html -->
+              <a href="#" class="social-icon social-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <i class="icon-facebook"></i>
+                <i class="icon-facebook"></i>
+              </a>
+              <a href="#" class="social-icon social-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <i class="icon-twitter"></i>
+                <i class="icon-twitter"></i>
+              </a>
+              <a href="#" class="social-icon social-google" data-toggle="tooltip" data-placement="top" title="Google">
+                <i class="icon-google-plus"></i>
+                <i class="icon-google-plus"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

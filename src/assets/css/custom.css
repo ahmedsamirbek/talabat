@@ -17,103 +17,6 @@ p {
 .tp-simpleresponsive .tp-caption {
   font-family: "arabic";
 }
-
-#header.transparent {
-  border: none;
-  box-shadow: none !important;
-}
-
-#topMain>li>a,
-#lang>li>a {
-  height: 50px;
-  line-height: normal;
-}
-
-#sidepanel_btn {
-  background-color: #007367 !important;
-}
-
-#lang-btn {
-  background-color: #ffde00 !important;
-}
-
-#lang-btn:hover {
-  background-color: #007367 !important;
-}
-
-#lang.nav-pills>li:hover>a {
-  color: #fff;
-}
-
-#topMain.nav-pills>li>a,
-#lang.nav-pills>li>a {
-  font-size: 30px;
-}
-
-#lang.nav-pills>li>a {
-  color: #000;
-}
-
-#topMain {
-  margin-top: 10%;
-}
-
-#lang {
-  margin-top: 2%;
-}
-
-#topNav .navbar-collapse {
-  padding: 0;
-}
-
-.talbat-logo {
-  height: 30px;
-  width: auto;
-  background-color: #ffffff90 !important;
-}
-
-.talbat-logo img {
-  vertical-align: top;
-}
-
-#sidepanel {
-  left: auto;
-  right: -280px;
-}
-
-#sidepanel.sidepanel-light {
-  color: #fff !important;
-  background-color: #007367;
-}
-
-#sidepanel.sidepanel-light ul a {
-  color: #fff !important;
-  font-size: 18px;
-  text-align: center;
-}
-
-#sidepanel .list-group-item {
-  background: transparent;
-  transition: .5s;
-  padding: 8px 20px;
-  border: 1px solid transparent;
-}
-
-#sidepanel .list-group-item:hover {
-  background: #ffde00;
-  border: 1px dotted #007367;
-  border-left-color: transparent;
-  border-right-color: transparent;
-}
-
-#sidepanel.sidepanel-light ul .list-group-item:hover a {
-  color: #007367 !important;
-}
-
-#sidepanel .sidepanel-content {
-  margin: 40px 0;
-}
-
 .overlay.green-82 {
   background-color: rgba(0, 115, 103, 0.82);
 }
@@ -268,55 +171,41 @@ p {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  #topNav div.nav-main-collapse.collapse {
-    display: block!important;
-  }
-  #topMain
-{
-    margin-top: 0;
-}
-.nav-main{
-    background-color: transparent !important;
-}
-#header #topNav #topMain>li>a{
-    float: right;
-}
-#header.transparent #topMain{
-    background-color: transparent !important;
-}
-}
-.sticky-side-right{
+.sticky-side-right {
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   width: auto;
-  z-index: 99999;
+  z-index: 100;
 }
-.sticky-side-left{
+
+.sticky-side-left {
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   width: auto;
-  z-index: 99999;
+  z-index: 100;
   left: -40px;
   background-color: #ffde00;
   color: #005c52;
   padding: 5px 10px;
 }
-.rating-box{
+
+.rating-box {
   background-color: #ffde00;
   color: #005c52;
   padding: 5px 10px;
   font-weight: 600;
 }
-.rating-modal .modal-dialog{
+
+.rating-modal .modal-dialog {
   right: 50px;
   position: absolute;
   top: 25%;
   width: 600px;
 }
-.rating-modal .modal-dialog:after{
+
+.rating-modal .modal-dialog:after {
   content: "";
   display: block;
   position: absolute;
@@ -328,23 +217,105 @@ p {
   border-bottom: 10px solid transparent;
   border-left: 10px solid #f8f8f8;
 }
-.modal-open{
+
+.modal-open {
   padding: 0 !important;
   overflow: auto;
 }
+
 .star-rating {
-  line-height:32px;
-  font-size:1.25em;
+  line-height: 32px;
+  font-size: 1.25em;
 }
 
-.star-rating .fa-star{color: #ffde00;}
-.qty{
+.star-rating .fa-star {
+  color: #ffde00;
+}
+
+.qty {
   float: none !important;
 }
-.item-sold{
-  border-bottom:1px solid rgba(0, 0, 0, .2);
-  padding:5px 0;
+
+.item-sold {
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  padding: 5px 0;
 }
-.cartContent .row{
+
+.cartContent .row {
   margin-bottom: 0;
+}
+/* menu */
+#topNav a.logo,#topMain>li>a{
+  height: 65px;
+  line-height: 50px;
+  
+}
+#topMain.nav-pills>li>a{
+  color: #005c52;
+  text-align: right;
+}
+#topMain.nav-pills>li:hover>a, #topMain.nav-pills>li:focus>a{
+  color: #fff;
+}
+#header a.logo>img{
+  position: absolute;
+  height: 100px;
+  margin-top: 5px;
+}
+#topNav .navbar-collapse{
+  width: 60%;
+  margin:auto;
+  float: none !important;
+}
+#header ul.nav-second-main{
+  margin-top: 30px;
+}
+#header li.quick-cart .quick-cart-box{
+  margin-top: 15px;
+}
+.white{
+  color: #fff;
+}
+.rest-name{
+  font-weight: 300;
+  padding:10px 5px;
+  font-size: 14px;
+}
+
+
+/* number input edit */
+.box-static button{
+  width: 100%;
+}
+.res-details{
+  padding: 5px 10px;
+}
+.order-qty{
+  padding: 5px 10px;
+  background-color: #f8f8f8;
+
+}
+#qty{
+  width: 50%;
+  height: 22px;
+  text-align: center;
+  
+}
+.add{
+  float: right;
+  height: 22px;
+  width: 25%;
+  background-color:#005c52;
+  color: #fff; 
+  text-align: center;
+  cursor: pointer;
+}
+.sub{
+  float: left;
+  height: 22px;
+  width: 25%;
+  background-color:#005c52;
+  color: #fff; 
+  text-align: center;
+  cursor: pointer;
 }

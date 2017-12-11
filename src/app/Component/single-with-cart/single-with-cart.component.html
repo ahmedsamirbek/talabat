@@ -636,37 +636,55 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="toggle-transparent toggle-bordered-full clearfix margin-top-100">
-              <div class="toggle active">
-
-                <div class="toggle-content" style="display: block;">
-
-                  <span class="clearfix">
-                    <span class="pull-left">120 ريال</span>
-                    <strong class="pull-right">المبلغ:</strong>
-                  </span>
-                  <span class="clearfix">
-                    <span class="pull-left">0.00</span>
-                    <span class="pull-right">التخفيض:</span>
-                  </span>
-                  <span class="clearfix">
-                    <span class="pull-left">0.00</span>
-                    <span class="pull-right">التوصيل:</span>
-                  </span>
-
-                  <hr>
-
-                  <span class="clearfix">
-                    <span class="pull-left size-20">ريال120.75</span>
-                    <strong class="pull-right">الاجمالى:</strong>
-                  </span>
-
-                  <hr>
-
-                  <a data-toggle="modal" data-target=".cart-modal" class="btn btn-primary btn-lg btn-block size-15">
-                    <i class="fa fa-mail-forward"></i> أكد الطلب</a>
-                </div>
+            <div class="box-static box-transparent box-bordered nopadding relative">
+              <div class="box-title nomargin">
+                <h2 class="size-20 bg-green text-center padding-10 nomargin white">عربة التسوق</h2>
               </div>
+              <h3 class="rest-name nomargin">اسم المطعم</h3>
+              <div class="order-qty">
+                <div class="row">
+                  <div class="col-md-4">
+                    <input id="qty" type="text" value="1" />
+                    <div id="add" class="add">+</div>
+                    <div id="sub" class="sub">-</div>
+                  </div>
+                  <div class="col-md-5">
+                    <span>فرخة مشوية</span>
+                  </div>
+                  <div class="col-md-3">
+                    <span>23ر.س</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="res-details">
+                <div class="row margin-bottom-10">
+                  <div class="col-md-6 pull-right">
+                    <span>المجموع</span>
+                  </div>
+                  <div class="col-md-6 pull-left">
+                    <span>25 س.ر</span>
+                  </div>
+                </div>
+                <div class="row margin-bottom-10">
+                  <div class="col-md-6 pull-right">
+                    <span>رسوم التوصيل</span>
+                  </div>
+                  <div class="col-md-6 pull-left">
+                    <span>5 س.ر</span>
+                  </div>
+                </div>
+                <div class="row margin-bottom-10">
+                  <div class="col-md-6 pull-right">
+                    <span>المبلغ الاجمالى</span>
+                  </div>
+                  <div class="col-md-6 pull-left">
+                    <span>30 س.ر</span>
+                  </div>
+                </div>
+                <button class="btn btn-success " data-toggle="modal" data-target=".cart-modal">أكد الطلب</button>
+              </div>
+
             </div>
           </div>
         </div>
@@ -750,27 +768,27 @@
                         </a>
                       </div>
                     </div>
-                  
-                  <!-- update cart -->
-                  <button class="btn btn-success margin-top-20 margin-right-10 pull-right">
-                    <i class="glyphicon glyphicon-ok"></i>تأكيد الطلب</button>
-                  <button class="btn btn-danger margin-top-20 margin-right-10 pull-right">
-                    <i class="glyphicon glyphicon-remove"></i> تفريغ العربة</button>
-                  <!-- /update cart -->
 
-                  <div class="clearfix"></div>
+                    <!-- update cart -->
+                    <button class="btn btn-success margin-top-20 margin-right-10 pull-right">
+                      <i class="glyphicon glyphicon-ok"></i>تأكيد الطلب</button>
+                    <button class="btn btn-danger margin-top-20 margin-right-10 pull-right">
+                      <i class="glyphicon glyphicon-remove"></i> تفريغ العربة</button>
+                    <!-- /update cart -->
+
+                    <div class="clearfix"></div>
+                  </div>
+                  <!-- /cart content -->
+
+                </form>
+                <!-- /CART -->
+
               </div>
-              <!-- /cart content -->
-
-              </form>
-              <!-- /CART -->
 
             </div>
-
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>

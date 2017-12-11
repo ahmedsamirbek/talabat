@@ -1,6 +1,15 @@
-.bg-page{
-    background-color: #f2f2f2;
+.bg-page {
+  background-color: #f2f2f2;
 }
-section{
-    background-color: #fff;
+
+section {
+  background-color: #fff;
+}
+
+.box-static {
+  border-radius: 5px;
+  h2 {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
 }

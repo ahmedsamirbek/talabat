@@ -1,39 +1,121 @@
-<div id="header" class="transparent clearfix">
+<div id="header" class="sticky clearfix">
+
   <!-- TOP NAV -->
   <header id="topNav">
-    <div class="">
-      <!-- Logo -->
+    <div class="full-container">
 
-      <div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
+      <!-- Mobile Menu Button -->
+      <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <!-- BUTTONS -->
+      <ul class="pull-left nav nav-pills nav-second-main">
+        <!-- QUICK SHOP CART -->
+        <li class="quick-cart">
+          <a href="#">
+            <span class="badge badge-aqua btn-xs badge-corner">2</span>
+            <i class="fa fa-shopping-cart"></i>
+          </a>
+          <div class="quick-cart-box">
+            <h4>عربة التسوق</h4>
+
+            <div class="quick-cart-wrapper">
+
+              <a href="#">
+                <!-- cart item -->
+                <img src="assets/images/demo/thematics/restaurant/a-min.jpg" width="45" height="45" alt="" />
+                <h6>
+                  <span>2x</span> وجبة دجاج مشوي</h6>
+                <small>37.21 ريال سعودي </small>
+              </a>
+              <!-- /cart item -->
+
+              <a href="#">
+                <!-- cart item -->
+                <img src="assets/images/demo/thematics/restaurant/a-min.jpg" width="45" height="45" alt="" />
+                <h6>
+                  <span>2x</span> وجبة دجاج مشوي</h6>
+                <small>37.21 ريال سعودي </small>
+              </a>
+              <!-- /cart item -->
+
+              <!-- cart no items example -->
+              <!--
+                      <a class="text-center" href="#">
+                        <h6>0 ITEMS ON YOUR CART</h6>
+                      </a>
+                      -->
+
+            </div>
+
+            <!-- quick cart footer -->
+            <div class="quick-cart-footer clearfix">
+              <a href="shop-cart.html" class="btn btn-primary btn-xs pull-left">تأكيد</a>
+              <span class="pull-right">
+                <strong>الاجمالى:</strong> $54.39</span>
+            </div>
+            <!-- /quick cart footer -->
+
+          </div>
+        </li>
+        <!-- /QUICK SHOP CART -->
+
+      </ul>
+      <!-- /BUTTONS -->
+
+
+      <!-- Logo -->
+      <a class="logo pull-right" href="index.html">
+        <img src="assets/images/logo_dark.png" alt="" />
+      </a>
+
+      <!-- 
+                Top Nav 
+                
+                AVAILABLE CLASSES:
+                submenu-dark = dark sub menu
+              -->
+      <div class="navbar-collapse pull-right nav-main-collapse collapse">
         <nav class="nav-main">
+
           <ul id="topMain" class="nav nav-pills nav-main">
             <li>
-              <a id="sidepanel_btn" href="#" class="fa fa-bars"></a>
-
-            </li>
-            <li>
-              <a class="talbat-logo" href="#">
-                <img src="assets/images/logo_dark.png" class="img-responsive " alt="" />
+              <!-- HOME -->
+              <a class="hvr-bounce-to-left" href="#">
+                عروض المطاعم
               </a>
             </li>
-          </ul>
-
-
-        </nav>
-        <nav class="nav-main">
-          <ul id="lang" class="nav nav-pills nav-main">
             <li>
-              <a id="lang-btn" class="fa fa-language" href="#"></a>
+              <!-- HOME -->
+              <a class="hvr-bounce-to-left" href="#">
+                الاكثر مبيعاً
+              </a>
+            </li>
+            <li>
+              <!-- HOME -->
+              <a class="hvr-bounce-to-left" href="#">
+                جميع المطاعم
+              </a>
+            </li>
+            <li>
+              <!-- HOME -->
+              <a class="hvr-bounce-to-left" data-toggle="modal" data-target=".login-modal">
+                تسجيل الدخول
+              </a>
+            </li>
+            <li>
+              <a class="hvr-bounce-to-right no-text-underline" href="#">
+                <img class="flag-lang" src="assets/images/flags/us.png" width="16" height="11" alt="lang"> ENGLISH</a>
 
             </li>
           </ul>
         </nav>
       </div>
-
     </div>
   </header>
-  <!-- /Top Nav -->
 </div>
+
 <div class="sticky-side sticky-side-right visible-md visible-lg">
   <a class="rating-box" data-toggle="modal" data-target=".rating-modal">
     <span>رأيك يهمنا</span>
