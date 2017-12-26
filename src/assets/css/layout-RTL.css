@@ -292,10 +292,10 @@ img.pull-right {
 	float:right;
 }
 .cartContent .qty {
-	float:left;
+	float:left !important;
 }
 .cartContent .total_price {
-	float:left;
+	float:left ;
 }
 .cartContent .qty input {
 	margin-right:0;

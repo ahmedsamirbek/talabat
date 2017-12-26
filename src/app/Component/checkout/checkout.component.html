@@ -1,0 +1,368 @@
+<div class="bg-page">
+  <section class="page-header page-header-lg parallax parallax-3" style="background-image:url('assets/images/demo/thematics/restaurant/slider_2-min.jpg')">
+    <div class="overlay dark-5">
+      <!-- dark overlay [1 to 9 opacity] -->
+    </div>
+
+    <div class="container">
+
+      <h1>اسم المطعم</h1>
+
+
+      <!-- breadcrumbs -->
+      <ol class="breadcrumb">
+        <li>
+          <a href="#">الرئيسية</a>
+        </li>
+        <li>
+          <a href="#">قائمة المطاعم</a>
+        </li>
+        <li>
+          <a class="active">اسم المطعم</a>
+        </li>
+
+      </ol>
+      <!-- /breadcrumbs -->
+
+    </div>
+  </section>
+  <!-- CART -->
+  <section>
+    <div class="container">
+
+
+
+      <!-- CART -->
+      <div class="row">
+
+        <!-- LEFT -->
+        <div class="col-lg-9 col-sm-8">
+
+          <!-- CART -->
+          <form class="cartContent clearfix" method="post" action="#">
+
+            <!-- cart content -->
+            <div id="cartContent">
+              <!-- cart header -->
+              <div class="item head clearfix">
+                <span class="cart_img"></span>
+                <span class="product_name size-13 bold">اسم المنتج</span>
+                <span class="remove_item size-13 bold"></span>
+                <span class="total_price size-13 bold">الاجمالى</span>
+                <span class="qty size-13 bold">الكمية</span>
+              </div>
+              <!-- /cart header -->
+
+              <!-- cart item -->
+              <div class="item">
+                <div class="cart_img pull-right width-100 padding-10 text-right">
+                  <img src="assets/images/demo/thematics/restaurant/a-min.jpg" alt="" width="80" />
+                </div>
+                <a href="#" class="product_name">
+                  <span>فرخة مشوية</span>
+                  <small>كبيرة , بيبسى</small>
+                </a>
+
+                <div class="total_price">ر.س
+                  <span>21.00</span>
+                </div>
+                <div class="qty">
+                  <input type="number" readonly value="1" name="qty" maxlength="3" max="999" min="1" /> &times; ر.س21.00</div>
+                <div class="clearfix"></div>
+              </div>
+              <!-- /cart item -->
+
+              <div class="clearfix"></div>
+            </div>
+            <!-- /cart content -->
+
+          </form>
+          <!-- /CART -->
+
+        </div>
+
+
+        <!-- RIGHT -->
+        <div class="col-lg-3 col-sm-4">
+
+          <!-- TOGGLE -->
+          <div class="toggle-transparent toggle-bordered-full clearfix">
+
+            <div class="toggle nomargin-top">
+              <label>كوبون الخصم</label>
+
+              <div class="toggle-content">
+
+                <form action="#" method="post" class="nomargin">
+                  <input type="text" id="cart-code" name="cart-code" class="form-control text-center margin-bottom-10" placeholder="Voucher Code"
+                    required="required">
+                  <button class="btn btn-primary btn-block" type="submit">تفعيل</button>
+                </form>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- /TOGGLE -->
+
+
+        </div>
+
+      </div>
+      <!-- /CART -->
+
+    </div>
+  </section>
+  <!-- /CART -->
+
+  <!-- CART -->
+  <section>
+    <div class="container">
+      <!-- CHECKOUT -->
+      <form class="row clearfix" method="post" action="shop-checkout-final.html">
+
+        <div class="col-lg-7 col-sm-7">
+          <div class="heading-title">
+            <h4>تفاصيل الدفع و التوصيل</h4>
+          </div>
+
+
+          <!-- BILLING -->
+          <fieldset class="margin-top-60">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <label for="billing_firstname">الاسم الاول *</label>
+                <input id="billing_firstname" name="billing[firstname]" type="text" class="form-control required" />
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <label for="billing_lastname">الاسم الاخير *</label>
+                <input id="billing_lastname" name="billing[lastname]" type="text" class="form-control required" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <label for="billing_email">البريد الالكترونى *</label>
+                <input id="billing_email" name="billing[email]" type="text" class="form-control required" />
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <label for="billing_company">الشركة</label>
+                <input id="billing_company" name="billing[company]" type="text" class="form-control" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <label for="billing_address1">العنوان *</label>
+                <input id="billing_address1" name="billing[address][]" type="text" class="form-control required" placeholder="العنوان الاول"
+                />
+
+                <input id="billing_address2" name="billing[address][]" type="text" class="form-control margin-top-10" placeholder="العنوان الثانى"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <label for="billing_city">المدينة *</label>
+                <input id="billing_city" name="billing[city]" type="text" class="form-control required" />
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <label for="billing_state">المنطقة *</label>
+                <select id="billing_state" name="billing[state]" class="form-control pointer required">
+                  <option value="">اختر...</option>
+                  <option value="1">الرياض</option>
+                  <option value="2">جدة</option>
+                  <option value="">..............</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <label for="billing_zipcode">الرمز البريدي *</label>
+                <input id="billing_zipcode" name="billing[zipcode]" type="text" class="form-control required" />
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <label for="billing_phone">رقم التليفون *</label>
+                <input id="billing_phone" name="billing[phone]" type="text" class="form-control required" />
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <label for="billing_fax">رقم الموبايل</label>
+                <input id="billing_fax" name="billing[fax]" type="text" class="form-control" />
+              </div>
+            </div>
+
+            <hr />
+
+          </fieldset>
+          <!-- /BILLING -->
+
+
+
+
+        </div>
+
+
+
+        <div class="col-lg-5 col-sm-5">
+          <div class="heading-title">
+            <h4>طريقة الدفع</h4>
+          </div>
+
+          <!-- PAYMENT METHOD -->
+
+
+          <div class="toggle nomargin-top">
+            <label>بيانات الدفع بالفيزا</label>
+
+            <div class="toggle-content">
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <label for="payment:name">اسم صاحب البطاقة *</label>
+                  <input id="payment:name" name="payment[name]" type="text" class="form-control required" autocomplete="off" />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <label for="payment:name">نوع بطاقة الائتمان *</label>
+                  <select id="payment:state" name="payment[state]" class="form-control pointer required">
+                    <option value="">Select...</option>
+                    <option value="AE">American Express</option>
+                    <option value="VI">Visa</option>
+                    <option value="MC">Mastercard</option>
+                    <option value="DI">Discover</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <label for="payment:cc_number">رقم بطاقة الائتمان *</label>
+                  <input id="payment:cc_number" name="payment[cc_number]" type="text" class="form-control required" autocomplete="off" />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <label for="payment:cc_exp_month">تاريخ انتهاء البطاقة *</label>
+
+                  <div class="row nomargin-bottom">
+                    <div class="col-lg-6 col-sm-6">
+                      <select id="payment:cc_exp_month" name="payment[cc_exp_month]" class="form-control pointer required">
+                        <option value="0">الشهر</option>
+                        <option value="01">01 - يناير</option>
+                        <option value="02">02 - فبراير</option>
+                        <option value="03">03 - مارس</option>
+                        <option value="04">04 - ابريل</option>
+                        <option value="05">05 - مايو</option>
+                        <option value="06">06 - يونيو</option>
+                        <option value="07">07 - يوليو</option>
+                        <option value="08">08 - أغسطس</option>
+                        <option value="09">09 - سبتمبر</option>
+                        <option value="10">10 - أكتوبر</option>
+                        <option value="11">11 - نوفمبر</option>
+                        <option value="12">12 - ديسمبر</option>
+                      </select>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+                      <select id="payment:cc_exp_year" name="payment[cc_exp_year]" class="form-control pointer required">
+                        <option value="0">السنة</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                      </select>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <label for="payment:cc_cvv">CVV2 *</label>
+                  <input id="payment:cc_cvv" name="payment[cc_cvv]" type="text" class="form-control required" autocomplete="off" maxlength="4"
+                  />
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- /PAYMENT METHOD -->
+
+          <!-- CREDIT CARD PAYMENT -->
+          <fieldset id="ccPayment" class="margin-top-30 softhide">
+
+            <div class="toggle-transparent toggle-bordered-full clearfix">
+              <div class="toggle active">
+                <div class="toggle-content">
+
+                </div>
+              </div>
+            </div>
+
+          </fieldset>
+          <!-- /CREDIT CARD PAYMENT -->
+
+
+          <!-- TOTAL / PLACE ORDER -->
+          <div class="toggle-transparent toggle-bordered-full clearfix">
+            <div class="toggle active">
+              <div class="toggle-content">
+
+                <span class="clearfix">
+                  <span class="pull-left">120 ر.س</span>
+                  <strong class="pull-right">سعر الفاتورة:</strong>
+                </span>
+                <span class="clearfix">
+                  <span class="pull-left">0.00 ر.س</span>
+                  <span class="pull-right">التخفيض:</span>
+                </span>
+                <span class="clearfix">
+                  <span class="pull-left">8.00 ر.س</span>
+                  <span class="pull-right">التوصيل:</span>
+                </span>
+
+                <hr />
+
+                <span class="clearfix">
+                  <span class="pull-left size-20"> ر.س 120.05</span>
+                  <strong class="pull-right">الاجمالى:</strong>
+                </span>
+
+                <hr />
+
+                <button class="btn btn-primary btn-lg btn-block size-15">
+                  <i class="fa fa-mail-forward"></i> اتمام عملية الدفع</button>
+              </div>
+            </div>
+          </div>
+          <!-- /TOTAL / PLACE ORDER -->
+
+      
+        </div>
+      </form>
+      <!-- /CHECKOUT -->
+
+    </div>
+  </section>
+  <!-- /CART -->
+
+</div>
